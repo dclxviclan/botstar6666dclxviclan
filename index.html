@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <script src="https://cdn.botstar.com/js-sdk/widget.v2.js"></script>
+</head>
+<body>
+
+  <!-- This is where the chatbot widget will appear -->
+  <div id="botstar-chatbot"></div>
+
+  <script>
+    // Initialize BotStar widget
+    var chatbot = BotStarAPI.init({
+      botId: "s2a234a40-dff9-11ed-bbe3-a7084e249319",
+      apiKey: "996396abff32e30e75f834209df82963",
+      welcomeMessage: "Hi, how can I assist you?",
+      placeholderText: "Type your message here...", 
+      // You can customize the widget's appearance
+      // by setting the following properties:
+      // iconUrl: "https://your_icon_url_here",
+      // color: "#ff1223"
+    });
+
+    // Render the widget on the page
+    chatbot.render("botstar-chatbot");
+  </script>
+
+</body>
+</html>
